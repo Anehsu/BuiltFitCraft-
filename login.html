@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuiltFitCraft - Login or SingUp</title>
+    <link rel="stylesheet" href="login-SignUp.css">
+</head>
+<body>
+        <div class="login-container">
+            <div class="login-box">
+                <h2>BuiltFitCraft</h2>
+                <p>Your One-Stop Hardware Shop</p>
+                
+                <form id="login-Form">
+                    <input type="email" id="email" placeholder="Email or phone number" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="submit" id="login-button" class="btn">Log In</button>
+                </form>
+    
+                <div class="forgot-password">
+                    <a href="#">Forgotten password?</a>
+                </div>
+    
+                <div class="divider">
+                    <hr>
+                </div>
+    
+                <div class="create-account">
+                    <a href="signUp.html">
+                         <button class="btn-create">Create New Account</button>
+                    </a>
+                   
+                </div>
+            </div>
+        </div>    
+
+    <script>
+        
+  const initialEmail = "squeennettee@gmail.com";
+  const rightPassword = "123456";
+
+  document.getElementById('login-Form').addEventListener('submit', function (event) {
+    event.preventDefault(); 
+
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    
+    if (email === initialEmail && password === rightPassword) {  
+        alert(`Login successful, welcome`)
+      window.location.href = "products.html";  
+    } else {
+      alert("Invalid email or password.");
+    }
+  });
+  window.onclick = function(event) {
+    const loginContainer = document.querySelector('.login-container');
+    
+    // Check if the click is outside the .login-container
+    if (!loginContainer.contains(event.target)) {
+        // Redirect to home.html when clicking outside
+        window.location.href = 'home.html';
+    }
+};
+    </script>
+</body>
+</html>

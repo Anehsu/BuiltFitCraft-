@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BuildFitCraft - Online Hardware Store</title>
+        <link rel="stylesheet" href="products.css">
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+
+    <header>
+        <h1>BuildFitCraft</h1>
+        <p>Your one-stop shop for quality hardware and home improvement tools</p>
+        <div class="icons">
+            <button class="view-cart-btn cart-btn" onclick="viewCart()"><i class='bx bxs-cart-download'></i> View Cart</button>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#plumbing">Plumbing Supplies</a>
+        <a href="#hand-tools">Hand Tools</a>
+        <a href="#bulding-materials">Building Materials</a>
+        <a href="#fasteners">Fasteners</a>
+    </nav>
+
+    <div id="main-content">
+        <div class="search-bar">
+            <a href="home.html"><button class="home"><i class='bx bxs-home'></i> Home</button></a>
+            <input type="text" placeholder="Search products..." id="searchInput">
+            <button onclick="searchProducts()"><i class='bx bx-search-alt'></i> Search</button>
+        </div>
+
+        <!-- Plumbing Supplies Section -->
+        <div class="content" id="plumbing">                
+            <h2 id="plumbing">Plumbing Supplies</h2>
+            <div class="gallery">
+                <div class="gallery-item" onclick="showDetails('Bathroom Faucet', 'Chrome', '40', 'plumbing supplies/Hansgrohe Talis E 4 3_8_ Single Handle Bathroom Faucet with Pop-Up Assembly In Chrome, 71710001.jpg', '4.5', 'This elegant bathroom faucet combines high-quality materials and a modern design. With a single handle for easy temperature control and a pop-up drain assembly, it’s perfect for any contemporary bathroom.')">
+                    <img src="plumbing supplies/Hansgrohe Talis E 4 3_8_ Single Handle Bathroom Faucet with Pop-Up Assembly In Chrome, 71710001.jpg" alt="Bathroom Faucet">
+                    <p>Bathroom Faucet</p>
+                  </div>
+                <div class="gallery-item" onclick="showDetails('Spring Buckles', 'White', '30', 'plumbing supplies/1pc 304 Stainless Steel Carabiner Quick Hanging Spring Buckle Snap Safety Insurance Buckle Connecting Buckle Gourd Buckle Dog Chain Buckle.jpg', '4.2', 'These durable 304 stainless steel spring buckles are designed for quick and easy connections. Perfect for outdoor activities and pet accessories.')">
+                    <img src="plumbing supplies/1pc 304 Stainless Steel Carabiner Quick Hanging Spring Buckle Snap Safety Insurance Buckle Connecting Buckle Gourd Buckle Dog Chain Buckle.jpg" alt="Spring Buckles">
+                    <p>Spring Buckles</p>
+                </div>
+                <div class="gallery-item" onclick="showDetails('PVC Pipe Caps', 'White', '15', 'plumbing supplies/3 in_ PVC Flexible Pipe Cap with Stainless Steel Clamps (Pack of 4).jpg', '4.5', 'This pack of 4 PVC pipe caps features stainless steel clamps, providing secure sealing and protection for your pipes. Ideal for both indoor and outdoor plumbing applications.')">
+                    <img src="plumbing supplies/3 in_ PVC Flexible Pipe Cap with Stainless Steel Clamps (Pack of 4).jpg" alt="PVC Pipe Caps">
+                    <p>PVC Pipe Caps</p>
+                </div>
+                <div class="gallery-item" onclick="showDetails('Pulse Valve', 'White', '50', 'plumbing supplies/COVNA HKMCF-Z Straight Through Pulse Valve-Manufacturer.jpg', '4.7', 'This high-performance pulse valve is designed for precise control of fluid flow in various industrial applications. Known for its durability and reliability.')">
+                    <img src="plumbing supplies/COVNA HKMCF-Z Straight Through Pulse Valve-Manufacturer.jpg" alt="Pulse Valve">
+                    <p>Pulse Valve</p>
+                </div>
+
+                <div class="gallery">
+                    <div class="gallery-item" onclick="showDetails('Edelbrock', 'Chrome', '15', 'plumbing supplies/Edelbrock 1- Int Valve 2 14 X 4 91 Chrys 60929 Head 9640.jpg', '4.3', 'The Edelbrock 1-Inch Valve provides superior performance for your car’s engine. Its precision engineering ensures durability and efficiency in high-performance engines.')">
+                        <img src="plumbing supplies/Edelbrock 1- Int Valve 2 14 X 4 91 Chrys 60929 Head 9640.jpg" alt="Edelbrock">
+                        <p>Edelbrock</p>
+                    </div>
+                    <div class="gallery-item" onclick="showDetails('Bathroom Tap', 'White', '30', 'plumbing supplies/Sink Counter Waterfall Bathroom Tap Basin Mixer Tap Chrome Square Mono Faucet.jpg', '4.6', 'This modern bathroom tap features a waterfall design and chrome finish. Its sleek and stylish look complements any contemporary bathroom.')">
+                        <img src="plumbing supplies/Sink Counter Waterfall Bathroom Tap Basin Mixer Tap Chrome Square Mono Faucet.jpg" alt="Bathroom Tap">
+                        <p>Bathroom Tap</p>
+                    </div>
+                    <div class="gallery-item" onclick="showDetails('Towel Hanger', 'White', '10', 'plumbing supplies/Luxury TOWEL HANGER  Forme N°13.jpg', '4.1', 'This luxury towel hanger combines elegant design with sturdy functionality. It’s the perfect addition to a modern bathroom or powder room.')">
+                        <img src="plumbing supplies/Luxury TOWEL HANGER  Forme N°13.jpg" alt="Towel Hanger">
+                        <p>Towel Hanger</p>
+                    </div>
+                    <div class="gallery-item" onclick="showDetails('Shower Heads', 'White', '35', 'plumbing supplies/Speakman Deluxe Shower heads.jpg', '4.8', 'This deluxe shower head offers an exceptional shower experience with multiple spray settings. Perfect for creating a spa-like experience in your bathroom.')">
+                        <img src="plumbing supplies/Speakman Deluxe Shower heads.jpg" alt="Shower Heads">
+                        <p>Shower Heads</p>
+                    </div>
+            </div>
+        </div>
+
+        <!-- Hand Tools Section -->
+        <div class="content" id="hand-tools">                
+            <h2 id="hand">Hand Tools</h2>
+            <div class="gallery">
+                <div class="gallery-item" onclick="showDetails('Shovel', 'Chrome', '20', 'hand tools/download (1).jpg', '4.4', 'This chrome-plated shovel offers durability and strength for all your digging needs. Perfect for landscaping, gardening, and outdoor projects.')">
+                    <img src="hand tools/download (1).jpg" alt="Shovel">
+                    <p>Shovel</p>
+                </div>
+                <div class="gallery-item" onclick="showDetails('Scews', 'White', '5', 'hand tools/download (2).jpg', '4.0', 'These durable screws are perfect for home repairs and construction. Made of high-quality materials, they ensure a secure hold for various projects.')">
+                    <img src="hand tools/download (2).jpg" alt="Scews">
+                    <p>Scews</p>
+                </div>
+                <div class="gallery-item" onclick="showDetails('Fiskars', 'White', '10', 'hand tools/Fiskars 394741-1002 Control Bypass Lopper, 24-Inch.jpg', '4.7', 'The Fiskars bypass lopper is designed for effortless cutting of branches and small trees. With its ergonomic handle, it provides optimal control and comfort.')">
+                    <img src="hand tools/Fiskars 394741-1002 Control Bypass Lopper, 24-Inch.jpg" alt="Fiskars">
+                    <p>Fiskars</p>
+                </div>
+                <div class="gallery-item" onclick="showDetails('Rack', 'White', '8', 'hand tools/download (3).jpg', '3.9', 'This sturdy rack is perfect for organizing tools, clothes, or other household items. Its versatile design fits well in both indoor and outdoor settings.')">
+                    <img src="hand tools/download (3).jpg" alt="Rack">
+                    <p>Rack</p>
+                </div>
+            </div>
+
+            <div class="gallery">
+                <div class="gallery-item" onclick="showDetails('Gardening Hand Tool', 'Chrome', '10', 'hand tools/Gardening Hand Tools Trowel Shovel Rake Fork Hoe Garden Cultivator Transplant Weeding kit.jpg', '4.5', 'This comprehensive gardening tool set includes a trowel, shovel, rake, fork, hoe, and other essentials. Perfect for planting, weeding, and cultivating your garden.')">
+                    <img src="hand tools/Gardening Hand Tools Trowel Shovel Rake Fork Hoe Garden Cultivator Transplant Weeding kit.jpg" alt="Gardening Hand Tool">
+                    <p>Gardening Hand Tool</p>
+                </div>
+            
+                <div class="gallery-item" onclick="showDetails('Hex Head Nut', 'White', '2', 'hand tools/hex head nut.jpg', '4.2', 'This high-quality hex head nut is made for heavy-duty use in a variety of mechanical and construction applications. Durable and reliable for long-lasting performance.')">
+                    <img src="hand tools/hex head nut.jpg" alt="Hex head nut">
+                    <p>Hex Head Nut</p>
+                </div>
+            
+                <div class="gallery-item" onclick="showDetails('Remodelista', 'White', '15', 'hand tools/The Ultimate Dishwasher_ - Remodelista.jpg', '4.6', 'Remodelista is a trusted brand for kitchen accessories. This premium dishwasher provides excellent cleaning performance while being energy-efficient and eco-friendly.')">
+                    <img src="hand tools/The Ultimate Dishwasher_ - Remodelista.jpg" alt="Remodelista">
+                    <p>Remodelista</p>
+                </div>
+            
+                <div class="gallery-item" onclick="showDetails('Manure Fork', 'White', '10', 'hand tools/Truper 30323 Manure Fork - 5-Tine, Fiberglass Handle with 9-Inch Non Slip Grip, 50-Inch (1).jpg', '4.3', 'The Truper 30323 Manure Fork is designed for easy handling of manure, hay, and other materials. Its 5-tine design and ergonomic fiberglass handle make it a must-have for farm work.')">
+                    <img src="hand tools/Truper 30323 Manure Fork - 5-Tine, Fiberglass Handle with 9-Inch Non Slip Grip, 50-Inch (1).jpg" alt="Manure Fork">
+                    <p>Manure Fork</p>
+                </div>
+            </div>
+        </div>
+
+    
+        <div class="content" id="bulding-materials">                
+            <h2 id="building">Building Materials</h2>
+            <div class="gallery">
+                <div class="gallery-item" onclick="showDetails('Concrete mix', 'Chrome', '20', 'Building materials/A Strong Start_ The Best Concrete Mix for Every DIY Project.jpg', '4.3', 'A high-quality, versatile concrete mix ideal for both small and large DIY projects. It offers excellent strength and durability for any construction task.')">
+                    <img src="Building materials/A Strong Start_ The Best Concrete Mix for Every DIY Project.jpg" alt="Concrete mix">
+                    <p>Concrete mix</p>
+                </div>
+                <div class="gallery-item" onclick="showDetails('Alloy Steel', 'White', '25', 'Building materials/Alloy Steel Products Supplier_.jpg', '4.5', 'Alloy steel is renowned for its strength and toughness, making it an ideal choice for industrial and construction projects. Highly resistant to wear and corrosion.')">
+                    <img src="Building materials/Alloy Steel Products Supplier_.jpg" alt="Alloy Steel">
+                    <p>Alloy Steel</p>
+                </div>
+                <div class="gallery-item" onclick="showDetails('Profiles and Tubes', 'White', '15', 'Building materials/Different metal products_ Stainless steel profiles and tubes_.jpg', '4.0', 'Stainless steel profiles and tubes are versatile, durable, and perfect for various construction and manufacturing applications, providing long-lasting strength.')">
+                    <img src="Building materials/Different metal products_ Stainless steel profiles and tubes_.jpg" alt="Profiles and Tubes">
+                    <p>Profiles and Tubes</p>
+                </div>
+                <div class="gallery-item" onclick="showDetails('Foamglas', 'White', '100', 'Building materials/Foamglas – My New Favorite Insulation Material.jpg', '4.7', 'Foamglas offers superior thermal insulation, moisture resistance, and long-term durability. It’s an excellent choice for high-performance insulation in any building project.')">
+                    <img src="Building materials/Foamglas – My New Favorite Insulation Material.jpg" alt="Foamglas">
+                    <p>Foamglas</p>
+                </div>
+            </div>
+
+            <div class="gallery">
+                <div class="gallery-item" onclick="showDetails('Bubble form wrap', 'Chrome', '12', 'Building materials/Foil Insulation Single Aluminium Bubble Foam Wrap Van Loft Shed Heat Insulation.jpg', '4.1', 'A versatile, high-quality aluminum bubble wrap insulation perfect for vans, lofts, sheds, and more. Provides excellent thermal insulation and is easy to install.')">
+                    <img src="Building materials/Foil Insulation Single Aluminium Bubble Foam Wrap Van Loft Shed Heat Insulation.jpg" alt="Bubble form wrap">
+                    <p>Bubble form wrap</p>
+                </div>
+                <div class="gallery-item" onclick="showDetails('Small Shovel', 'White', '15', 'Building materials/Make a Mosaic Stepping Stone_ Fun DIY Garden Art!.jpg', '4.3', 'A durable and lightweight small shovel, ideal for DIY projects, gardening, and mosaics. Easy to handle with a strong steel blade and ergonomic grip.')">
+                    <img src="Building materials/Make a Mosaic Stepping Stone_ Fun DIY Garden Art!.jpg" alt="Small Shovel">
+                    <p>Small Shovel</p>
+                </div>
+                <div class="gallery-item" onclick="showDetails('YBS AirTec Double Insulation', 'White', '15', 'Building materials/YBS AirTec Double Insulation.jpg', '4.6', 'YBS AirTec offers exceptional thermal and sound insulation, ideal for roofs, walls, and floors. Its reflective insulation design improves energy efficiency and reduces heat loss.')">
+                    <img src="Building materials/YBS AirTec Double Insulation.jpg" alt="YBS AirTec Double Insulation">
+                    <p>YBS AirTec Double Insulation</p>
+                </div>
+                <div class="gallery-item" onclick="showDetails('Reinforcement Steel Bars', 'Silver', '15', 'Building materials/TMT Saria in Dehradun - Shri Rathi Group.jpg', '4.4', 'High-strength TMT steel bars designed for concrete reinforcement. Excellent corrosion resistance and perfect for residential and industrial construction.')">
+                    <img src="Building materials/TMT Saria in Dehradun - Shri Rathi Group.jpg" alt="Reinforcement Steel Bars">
+                    <p>Reinforcement Steel Bars</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hand Tools Section -->
+        <div class="content" id="fasteners">                
+            <h2 id="Fasteners">Fasteners</h2>
+            <div class="gallery">
+                <div class="gallery-item" onclick="showDetails('Countersunk Screw', 'Chrome', '2', 'Fasteners/25mm x 4_8mm Countersunk Screw, Cross Head, 50 Pack, 316 Stainless Steel.jpg', '4.5', 'These high-quality stainless steel countersunk screws are perfect for flush mounting and provide a sleek, professional finish for wood, plastic, and metal surfaces.')">
+                    <img src="Fasteners/25mm x 4_8mm Countersunk Screw, Cross Head, 50 Pack, 316 Stainless Steel.jpg" alt="Countersunk Screw">
+                    <p>Countersunk Screw</p>
+                </div>
+                <div class="gallery-item" onclick="showDetails('Flat Washer', 'Silver', '5', 'Fasteners/_Flat Washer_.jpg', '4.2', 'Flat washers help distribute the load of a fastener, ensuring a strong, even hold. These washers are made from durable steel for long-lasting use and reliability in various mechanical and construction applications.')">
+                    <img src="Fasteners/_Flat Washer_.jpg" alt="Flat Washer">
+                    <p>Flat Washer</p>
+                </div>
+                <div class="gallery-item" onclick="showDetails('Bolts and Nuts', 'Chrome', '20', 'Fasteners/Bolts and nuts stock photo_ Image of hexagon, industrial - 1232540.jpg', '4.7', 'This set of high-strength bolts and nuts is perfect for heavy-duty applications. Made from durable steel, they provide a secure and tight fit for machinery, vehicles, and structural assemblies.')">
+                    <img src="Fasteners/Bolts and nuts stock photo_ Image of hexagon, industrial - 1232540.jpg" alt="Bolts and Nuts">
+                    <p>Bolts and Nuts</p>
+                </div>
+                <div class="gallery-item" onclick="showDetails('Screw Driver Set', 'Blue', '20', 'Fasteners/Draper 8 Piece Soft Grip Screwdriver Set 48933.jpg', '4.4', 'This 8-piece screwdriver set includes a variety of sizes and types to handle most DIY and professional tasks. The soft grip handles provide comfort, and the chrome-vanadium steel shafts ensure durability and longevity.')">
+                    <img src="Fasteners/Draper 8 Piece Soft Grip Screwdriver Set 48933.jpg" alt="Screw Driver Set">
+                    <p>Screw Driver Set</p>
+                </div>
+            </div>
+
+            <div class="gallery">
+                <div class="gallery-item" onclick="showDetails('Drawing Nuts and Bolts', 'Chrome', '10', 'Fasteners/Drawing Nuts and Bolts – Timed Sketching Exercise.jpg', '4.3', 'A creative timed exercise showing the precise sketches of various nuts and bolts. Ideal for illustrating mechanical drawings or learning fastener designs.')">
+                    <img src="Fasteners/Drawing Nuts and Bolts – Timed Sketching Exercise.jpg" alt="Drawing Nuts and Bolts">
+                    <p>Drawing Nuts and Bolts</p>
+                </div>
+                <div class="gallery-item" onclick="showDetails('Disc Spring Washers', 'Chrome', '10', 'Fasteners/h.jpg', '4.5', 'Disc Spring Washers are designed to provide axial load retention in confined spaces, offering durable performance in heavy-duty applications.')">
+                    <img src="Fasteners/h.jpg" alt="Disc Spring Washers">
+                    <p>Disc Spring Washers</p>
+                </div>
+                <div class="gallery-item" onclick="showDetails('Veritas Bench Anchor', 'Gray', '10', 'Fasteners/Veritas Bench Anchor.jpg', '4.8', 'The Veritas Bench Anchor provides a secure mounting solution for woodworking benches. It ensures high stability and durability, even under heavy loads.')">
+                    <img src="Fasteners/Veritas Bench Anchor.jpg" alt="Veritas Bench Anchor">
+                    <p>Veritas Bench Anchor</p>
+                </div>
+                <div class="gallery-item" onclick="showDetails('Nails', 'Silver', '1', 'Fasteners/Hillman Fasteners™ 461385 Bright Box Nails, 1_5_ x 4D, 1 Lb.jpg', '4.2', 'These bright box nails are ideal for general construction, carpentry, and other woodworking applications. A great choice for durability and holding power.')">
+                    <img src="Fasteners/Hillman Fasteners™ 461385 Bright Box Nails, 1_5_ x 4D, 1 Lb.jpg" alt="Nails">
+                    <p>Nails</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for details -->
+        <div id="detailsModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <img id="modalImage" src="" alt="Item Image" class="item-image">
+                <div class="modal-details">
+                    <h3 id="description" class="product-title"></h3>
+                    <h3 id="color" class="product-title"></h3>
+                    <h3 id="cost" class="product-title"></h3>
+
+                    <p id="detailedDescription" class="detailed-description"></p>
+
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1" onchange="updatePrice()">
+
+                    <p id="totalCost">Total Cost: $<span id="totalCostValue">0.00</span></p>
+
+                    <div class="star-rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span id="rating-feedback">Rating: 0 stars</span>
+                    </div>
+                    
+                    <button class="js-add-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!--DISPLAYING THE CART LIST WITH ITEMS-->
+        <div id="cartModal" class="cart-modals">
+            <div class="cart-modals-content"> 
+                <h1>Your Cart</h1>
+                <div id="cart-list"></div>
+                <p id="total-price"></p>
+                <div class="conbutton">
+                    <button id="orderNowButton" onclick="placeOrder()">Order Now</button>
+                </div>
+                <span class="close" onclick="closeModal()">&times;</span>  
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 BuildFitCraft. All rights reserved.</p>
+        <a href="#main-content">Back to Top</a>
+    </footer>
+
+    <script src="products.js"></script>
+    </body>
+</html>

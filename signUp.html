@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BuiltFitCraft - Sign Up</title>
+  <link rel="stylesheet" href="login-SignUp.css">
+</head>
+<body>
+
+  <div class="signup-container">
+    <h2>Create Account</h2>
+    <form id="signupForm">
+  
+      <div class="input-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required />
+      </div>
+
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email2" name="email2" placeholder="Enter your email" required />
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password2" name="password2" placeholder="Enter your password" required />
+      </div>
+
+      <div class="input-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required />
+      </div>
+
+      <div id="error-message" class="error-message"></div>
+
+      <button type="submit" class="signup-button">Sign Up</button>
+
+      <div class="already-have-account">
+        <p>Already have an account? <a href="login.html">Log In</a></p>
+      </div>
+    </form>
+  </div>
+
+  <script>
+     const form = document.getElementById('signupForm');
+    const fullName = document.getElementById('fullName');
+    const email = document.getElementById('email2');
+    const password = document.getElementById('password2');
+    const confirmPassword = document.getElementById('confirmPassword');
+  
+    form.addEventListener('submit', function (event) {
+      event.preventDefault(); 
+    
+      const fullNameValue = fullName.value.trim();
+      const emailValue = email.value.trim();
+      const passwordValue = password.value.trim();
+      const confirmPasswordValue = confirmPassword.value.trim();
+
+      
+      if (passwordValue.length < 6) {
+        alert('Password must be at least 6 characters long.');
+        return;
+      }
+
+      if (passwordValue !== confirmPasswordValue) {
+        alert('Passwords do not match.');
+        return;
+      }
+   
+      alert(`Account successfully created for ${fullNameValue}`);
+      window.location.href = 'products.html';
+      
+      form.reset();
+    });
+    window.onclick = function(event) {
+    const loginContainer = document.querySelector('.signup-container');
+    
+    // Check if the click is outside the .login-container
+    if (!loginContainer.contains(event.target)) {
+        // Redirect to home.html when clicking outside
+        window.location.href = 'home.html';
+    }
+};
+  </script>
+ 
+</body>
+</html>
